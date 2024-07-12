@@ -8,7 +8,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url("img/android-chrome-512x512-removebg-preview.png")
+    background-image: url("img/android-chrome-512x512-removebg-preview.png");
+    background-size: contain; /* Verkleinert das Hintergrundbild */
+    background-repeat: no-repeat; /* Verhindert das Wiederholen des Bildes */
+    background-position: center; /* Zentriert das Bild */
 }
 
 /* Container für Abstand von den Seitenrändern */
@@ -75,62 +78,62 @@ header {
 
 /* Style The Dropdown Button */
 .dropbtn {
-  background-color: #836060;
-  color: white;
-  padding: 15px 20px;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  text-align: left;
-  display: block;
-  width: 100%;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+    background-color: #836060;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
-  display: inline-block;
-  width: 100%;
+    position: relative;
+    display: inline-block;
+    width: 100%;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #836060;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(255, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 10px;
-  overflow: hidden;
+    display: none;
+    position: absolute;
+    background-color: #836060;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .dropdown-content li {
-  display: block;
+    display: block;
 }
 
 .dropdown-content a {
-  color: #fff;
-  padding: 15px 20px;
-  text-decoration: none;
-  display: block;
-  transition: background-color 0.3s;
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
 }
 
 .dropdown-content a:hover {
-  background-color: #ab8e8e;
-  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+    background-color: #ab8e8e;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #ab8e8e;
+    background-color: #ab8e8e;
 }
 
 /* Main */
@@ -322,7 +325,6 @@ button.add-to-cart:active,
     transform: translateY(0);
 }
 
-
 /* Newsletter */
 .newsletter {
     background-color: #d9a8a8;
@@ -401,5 +403,9 @@ footer p {
         min-width: 100%;
         box-shadow: none;
         border: 1px solid #ddd;
+    }
+
+    .product-card img {
+        width: 100%;
     }
 }
