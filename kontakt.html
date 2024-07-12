@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Mein Kleidungs-Webshop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("a_S3vBvG1bvJMTkO-"); // Ersetzen Sie "YOUR_USER_ID" durch Ihre tatsächliche Benutzer-ID von EmailJS
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-container container">
+            <div class="container-left">
+                <nav class="horizontal-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">about us</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container-middle">
+                <div class="header-title">
+                    <h1>Mein Kleidungs-Webshop</h1>
+                </div>
+            </div>
+            <div class="container-right">
+                <nav class="horizontal-nav">
+                    <ul>
+                        <li><a href="warenkorb.html">Warenkorb (<span id="cart-count">0</span>)</a></li>
+                    </ul>
+                </nav>
+                <div class="dropdown">
+                    <button class="dropbtn">Artikel</button>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="./schuhe.html">Schuhe</a></li>
+                            <li><a href="./hoddies.html">Hoddies</a></li>
+                            <li><a href="./hosen.html">Hosen</a></li>
+                            <li><a href="./shirts.html">Shirts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact-form">
+            <h2>Kontaktieren Sie uns</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="button">Absenden</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Mein Kleidungs-Webshop</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

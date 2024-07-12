@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kleidungs-Webshop</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="header-container container">
+            <div class="container-left">
+                <nav class="horizontal-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">about us</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container-middle">
+                <div class="header-title">
+                    <h1>Mein Kleidungs-Webshop</h1>
+                </div>
+            </div>
+            <div class="container-right">
+                <nav class="horizontal-nav">
+                    <ul>
+                        <li><a href="warenkorb.html">Warenkorb (<span id="cart-count">0</span>)</a></li>
+                    </ul>
+                </nav>
+                <div class="dropdown">
+                    <button class="dropbtn">Artikel</button>
+                    <div class="dropdown-content">
+                            <li><a href="./schuhe.html">Schuhe</a></li>
+                            <li><a href="./hoddies.html">Hoddies</a></li>
+                            <li><a href="./hosen.html">Hosen</a></li>
+                            <li><a href="./shirts.html">Shirts</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="top-products">
+            <h2>Beliebteste Produkte</h2>
+            <div class="grid">
+                <!-- Produktkarten -->
+                <div class="product-card" id="p-1" data-id="1" data-name="Produkt 1" data-price="49.99">
+                    <img src="img/09b741a1-45a5-4756-897d-e0f6f1ea3d56.jpeg" alt="Produkt 1" />
+                    <h3>Produkt 1</h3>
+                    <p>Beschreibung des Produkts 1.</p>
+                    <p>Preis: 49,99 €</p>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </div>
+                <div class="product-card" id="p-2" data-id="2" data-name="Produkt 2" data-price="59.99">
+                    <img src="img/80abfa86-2e0f-4ee4-a589-435d8c3c4385.jpeg" alt="Produkt 2" />
+                    <h3>Produkt 2</h3>
+                    <p>Beschreibung des Produkts 2.</p>
+                    <p>Preis: 59,99 €</p>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </div>
+                <div class="product-card" id="p-3" data-id="3" data-name="Produkt 3" data-price="59.99">
+                    <img src="img/8a855107-fcc2-42ff-9a18-74138e67428e.jpeg" alt="Produkt 3" />
+                    <h3>Produkt 3</h3>
+                    <p>Beschreibung des Produkts 3.</p>
+                    <p>Preis: 59,99 €</p>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </div>
+                <div class="product-card" id="p-13" data-id="13" data-name="Produkt 13" data-price="59.99">
+                    <img src="img/Vintage Nike Air Shoes.jpeg" alt="Produkt 13" />
+                    <h3>Produkt 13</h3>
+                    <p>Beschreibung des Produkts 13.</p>
+                    <p>Preis: 59,99 €</p>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </div>
+                <div class="product-card" id="p-14" data-id="14" data-name="Produkt 14" data-price="59.99">
+                    <img src="img/𝒂𝒛𝒖𝒍𝒂 & 𝒌𝒂𝒕𝒂𝒓𝒂.jpeg" alt="Produkt 14" />
+                    <h3>Produkt 14</h3>
+                    <p>Beschreibung des Produkts 14.</p>
+                    <p>Preis: 59,99 €</p>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter">
+            <h2>Newsletter</h2>
+            <form action="newsletter.php" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <button type="submit">Anmelden</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Mein Kleidungs-Webshop</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

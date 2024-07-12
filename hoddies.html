@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kleidungs-Webshop</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="header-container container">
+            <div class="container-left">
+                <nav class="horizontal-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">about us</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container-middle">
+                <div class="header-title">
+                    <h1>Mein Kleidungs-Webshop</h1>
+                </div>
+            </div>
+            <div class="container-right">
+                <nav class="horizontal-nav">
+                    <ul>
+                        <li><a href="warenkorb.html">Warenkorb (<span id="cart-count">0</span>)</a></li>
+                    </ul>
+                </nav>
+                <div class="dropdown">
+                    <button class="dropbtn">Artikel</button>
+                    <div class="dropdown-content">
+                            <li><a href="./schuhe.html">Schuhe</a></li>
+                            <li><a href="./hoddies.html">Hoddies</a></li>
+                            <li><a href="./hosen.html">Hosen</a></li>
+                            <li><a href="./shirts.html">Shirts</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="top-products">
+            <h2>Beliebteste Produkte</h2>
+            <div class="grid">
+                <!-- Produktkarten -->
+                <div class="product-card" id="p-4" data-id="4" data-name="Produkt 4" data-price="59.99">
+                    <img src="img/Inlyline.jpeg" alt="Produkt 4" />
+                    <h3>Produkt 4</h3>
+                    <p>Beschreibung des Produkts 4.</p>
+                    <p>Preis: 59,99 €</p>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </div>
+                <div class="product-card" id="p-6" data-id="6" data-name="Produkt 6" data-price="59.99">
+                    <img src="img/kotiva.jpeg" alt="Produkt 6" />
+                    <h3>Produkt 6</h3>
+                    <p>Beschreibung des Produkts 6.</p>
+                    <p>Preis: 59,99 €</p>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </div>
+                <div class="product-card" id="p-8" data-id="8" data-name="Produkt 8" data-price="59.99">
+                    <img src="img/Marlboro Hoodie.jpeg" alt="Produkt 8" />
+                    <h3>Produkt 8</h3>
+                    <p>Beschreibung des Produkts 8.</p>
+                    <p>Preis: 59,99 €</p>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </div>
+                <div class="product-card" id="p-11" data-id="11" data-name="Produkt 11" data-price="59.99">
+                    <img src="img/Too good to throw away_ Vintage Mystery Surprise Box.jpeg" alt="Produkt 11" />
+                    <h3>Produkt 11</h3>
+                    <p>Beschreibung des Produkts 11.</p>
+                    <p>Preis: 59,99 €</p>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </div>
+                <div class="product-card" id="p-12" data-id="12" data-name="Produkt 12" data-price="59.99">
+                    <img src="img/Vintage Mens Crew Neck Jumper Sweater 2xl Navy Blue Striped Acrylic Zi14.jpeg" alt="Produkt 12" />
+                    <h3>Produkt 12</h3>
+                    <p>Beschreibung des Produkts 12.</p>
+                    <p>Preis: 59,99 €</p>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter">
+            <h2>Newsletter</h2>
+            <form action="newsletter.php" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <button type="submit">Anmelden</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Mein Kleidungs-Webshop</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

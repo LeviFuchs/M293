@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warenkorb - Mein Kleidungs-Webshop</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="header-container container">
+            <div class="container-left">
+                <nav class="horizontal-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">about us</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container-middle">
+                <div class="header-title">
+                    <h1>Mein Kleidungs-Webshop</h1>
+                </div>
+            </div>
+            <div class="container-right">
+                <nav class="horizontal-nav">
+                    <ul>
+                        <li><a href="warenkorb.html">Warenkorb (<span id="cart-count">0</span>)</a></li>
+                    </ul>
+                </nav>
+                <div class="dropdown">
+                    <button class="dropbtn">Artikel</button>
+                    <div class="dropdown-content">
+                            <li><a href="./schuhe.html">Schuhe</a></li>
+                            <li><a href="./hoddies.html">Hoddies</a></li>
+                            <li><a href="./hosen.html">Hosen</a></li>
+                            <li><a href="./shirts.html">Shirts</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Warenkorb</h2>
+        <div id="cart-items"></div>
+        <p id="cart-total"></p>
+        <button id="checkout" class="button">Zur Kasse</button>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Mein Kleidungs-Webshop</p>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
